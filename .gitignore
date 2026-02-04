@@ -1,1 +1,18 @@
+# Entorno virtual
 .venv/
+venv/
+env/
+
+# Archivos de compilación de Python
+**/__pycache__/
+*.py[cod]
+
+# Archivos de configuración de editores (opcional pero recomendado)
+.vscode/
+.idea/
+
+logs/*
+!logs/.gitkeep
+
+data/transformed/*
+!data/transformed/.gitkeep
