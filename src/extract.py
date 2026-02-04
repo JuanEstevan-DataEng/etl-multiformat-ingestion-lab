@@ -68,6 +68,6 @@ def extract(path):
         dataframes.append(extract_from_xml(xml_file))
         
     if not dataframes:
-        return pd.DataFrame()
+        return []
         
-    return pd.concat(dataframes, ignore_index=True)
+    return dataframes

@@ -3,10 +3,17 @@ import pandas as pd
 def transform(data):
     """
     Transforms the extracted data.
-    1. Selects only relevant columns.
-    2. Converts the 'price' column to numeric, handling errors.
-    3. Rounds the 'price' to 2 decimal places.
+    1. Concatenates the list of DataFrames into a single DataFrame.
+    2. Selects only relevant columns.
+    3. Converts the 'price' column to numeric, handling errors.
+    4. Rounds the 'price' to 2 decimal places.
     """
+    # Check if data is a list (from the new extract logic) and concatenate
+    if isinstance(data, list):
+        if not data:
+            return pd.DataFrame()
+        data = pd.concat(data, ignore_index=True)
+
     # Select specific columns to ensure schema consistency
     data = data[['car_model', 'year_of_manufacture', 'price', 'fuel']]
 
