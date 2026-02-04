@@ -1,6 +1,6 @@
 from datetime import datetime
 
-def log_progress(message, log_file='logs/log_file.txt'): 
+def log_progress(message, log_file)): 
     """
     Logs a message with a timestamp to a specified log file.
     
@@ -15,4 +15,3 @@ def log_progress(message, log_file='logs/log_file.txt'):
     # Open the log file in append mode to keep history
     with open(log_file,"a") as f: 
         f.write(timestamp + ',' + message + '\n') 
- 
