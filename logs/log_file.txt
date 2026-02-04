@@ -1,0 +1,24 @@
+2026-01-30 19:45:16,ETL Job Started
+2026-01-30 19:45:16,Extract phase Started
+2026-01-30 19:45:16,Data extraction complete.
+2026-01-30 19:45:16,Transform phase Started
+2026-01-30 19:45:16,Data transformation complete.
+2026-01-30 19:45:16,Load phase Started
+2026-01-30 19:45:16,Data loaded to CSV.
+2026-01-30 19:45:16,Data loaded to Database as table. Running the query
+2026-01-30 19:55:18,ETL Job Started
+2026-01-30 19:55:18,Extract phase Started
+2026-01-30 19:55:18,Data extraction complete.
+2026-01-30 19:55:18,Transform phase Started
+2026-01-30 19:55:18,Data transformation complete.
+2026-01-30 19:55:18,Load phase Started
+2026-01-30 19:55:18,Data loaded to CSV.
+2026-01-30 19:55:18,Data loaded to Database as table. Running the query
+2026-02-03 20:35:06,ETL Job Started
+2026-02-03 20:35:06,Extract phase Started
+2026-02-03 20:35:06,Data extraction complete.
+2026-02-03 20:35:06,Transform phase Started
+2026-02-03 20:35:06,Data transformation complete.
+2026-02-03 20:35:06,Load phase Started
+2026-02-03 20:35:06,Data loaded to CSV.
+2026-02-03 20:35:06,Data loaded to Database as table. Running the query
