@@ -1,6 +1,6 @@
 from datetime import datetime
 
-def log_progress(message, log_file)): 
+def log_progress(message, log_file): 
     """
     Logs a message with a timestamp to a specified log file.
     
