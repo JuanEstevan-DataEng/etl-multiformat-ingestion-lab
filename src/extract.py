@@ -53,19 +53,21 @@ def extract(path):
     Iterates through all CSV, JSON, and XML files in the specified path,
     extracts data, and concatenates it into a single DataFrame.
     """
-    # Create an empty DataFrame with the expected columns
-    extracted_data = pd.DataFrame(columns=['car_model', 'year_of_manufacture', 'price', 'fuel'])
+    dataframes = []
     
     # Process all CSV files
     for csv_file in glob.glob(os.path.join(path, "*.csv")):
-        extracted_data = pd.concat([extracted_data, extract_from_csv(csv_file)], ignore_index=True)
+        dataframes.append(extract_from_csv(csv_file))
         
     # Process all JSON files
     for json_file in glob.glob(os.path.join(path, "*.json")):
-        extracted_data = pd.concat([extracted_data, extract_from_json(json_file)], ignore_index=True)
+        dataframes.append(extract_from_json(json_file))
         
     # Process all XML files
     for xml_file in glob.glob(os.path.join(path, "*.xml")):
-        extracted_data = pd.concat([extracted_data, extract_from_xml(xml_file)], ignore_index=True)
+        dataframes.append(extract_from_xml(xml_file))
         
-    return extracted_data
+    if not dataframes:
+        return pd.DataFrame()
+        
+    return pd.concat(dataframes, ignore_index=True)
