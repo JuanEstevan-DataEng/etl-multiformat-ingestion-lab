@@ -58,7 +58,7 @@ def main():
         print("1. Display all cars")
         print("2. Display brand, model, year, and price of vehicles manufactured after 2015")
         print("3. Count vehicles by fuel type")
-        print("4. Exit")
+        print("4. exit")
         
         choice = input("Enter your choice (1-4): ")
 
